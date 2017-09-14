@@ -8,40 +8,27 @@
 
 [var name:"randomSeed" value:0 /]
 
-[section]
+[Feature]
+  [FeatureContent]
+    [Chart type:"scatter" randomSeed:randomSeed /]
+  [/FeatureContent]
 
-[waypoint]
-Idyll
-[/waypoint]
+  [Waypoint onEnterView:`randomSeed=2`]
+    A new markup language 
+    for creating interactive 
+    documents
+  [/Waypoint]
 
-[waypoint onEnteredView:`randomSeed=1`]
-A new markup language 
-for creating interactive 
-documents
-[/waypoint]
-
-[waypoint onEnteredView:`randomSeed=0` ]
-Combine a lightweight 
-markup language and reactive 
-JavaScript components
-[/waypoint]
+  [Waypoint onEnterView:`randomSeed=0` ]
+    Combine a lightweight 
+    markup language and reactive 
+    JavaScript components
+  [/Waypoint]
 
 
-[waypoint onEnteredView:`randomSeed=1` ]
-Visit [link href:"https://idyll-lang.github.io/" text:"https://idyll-lang.github.io/" /]
-for more information
-[/waypoint]
+  [Waypoint onEnterView:`randomSeed=1` ]
+    Visit [link href:"https://idyll-lang.github.io/" text:"https://idyll-lang.github.io/" /]
+    for more information
+  [/Waypoint]
 
-[waypoint onEnteredView:`randomSeed=2`]
-Here is the markup for this 
-page:
-
-[/waypoint]
-
-[/section]
-
-[fixed]
-
-[Chart type:"scatter" randomSeed:randomSeed /]
-
-[/fixed]
+[/Feature]
