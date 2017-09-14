@@ -9,9 +9,6 @@
 [var name:"randomSeed" value:0 /]
 
 [Feature]
-  [FeatureContent]
-    [Chart type:"scatter" randomSeed:randomSeed /]
-  [/FeatureContent]
 
   [Waypoint onEnterView:`randomSeed=2`]
     A new markup language 
